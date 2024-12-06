@@ -4,10 +4,7 @@ namespace Infraestrutura;
 //Add-Migration
 //Remove-Migration
 //update-database
-public interface IProdutoRepository
+public interface IProdutoRepository : IBaseRepository<Produto>
 {
-    void Adicionar(Produto produto);
-    List<Produto> Listar();
-    void Editar(Produto produto);
-    void Remover(int id);
+  
 }

@@ -4,10 +4,6 @@ namespace Infraestrutura;
 //Add-Migration
 //Remove-Migration
 //update-database
-public interface IPessoaRepository
+public interface IPessoaRepository : IBaseRepository<Pessoa>
 {
-    void Adicionar(Pessoa pessoa);
-    List<Pessoa> Listar();
-    void Editar(Pessoa pessoa);
-    void Remover(int id);
 }
